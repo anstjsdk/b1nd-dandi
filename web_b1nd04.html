@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(245, 210, 210);
+        }
+        h1 {
+            color:red;
+            font-family: "국립공원 반달이&꼬미 icon";
+            text-align: center;
+            font-size: 75px;
+            display: flex;
+            align-items: center;
+        }
+        .center {
+            text-align: center;
+        }
+        .container {  /*부모요소*/
+            width: 700px;
+            height: 450px;
+            padding: 60px;
+            overflow: auto; /*내용이 많으면 스크롤*/
+            white-space: normal; /*줄바꿈 허용 */
+            word-wrap: break-word; /*긴문장이 오면 줄바꿈*/
+            background-color: rgb(246, 248, 164);
+            border-radius: 27px;
+          
+        }
+        textarea {  /*자식요소*/
+            font-family:"칠곡할매 권안자체";
+            font-size: 20px;
+            text-align: center;
+           
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            background-color: rgb(14, 69, 21);
+            color: aliceblue;
+            font-family: "big caslon";
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .bear_icon {
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
+        }
+        label {
+            font-family:"경기천년제목" ;
+            color: rgb(14, 69, 21);
+        }
+        a:hover {
+            background-color: blue;
+        }
+        /*로그인 버튼 추가*/
+        .login-btn {
+            background-color: rgb(35, 118, 190);
+            color: aliceblue;
+        }
+        p {
+            font-family: "배달의민족 주아";
+            color: rgb(37, 21, 21);
+        }
+    </style>
+</head>
+<body>
+   <h1>Documenting my day!<img class="bear_icon" src="../images/bear.png" alt="icon" /></h1>
+   <textarea class="container">자유롭게 일상을 기록해보세요!</textarea><br>
+   <!--이미지업로드버튼-->
+   <label for="fileInput" class="imgbtn">
+    이미지 추가하기
+</label>
+<!--파일 선택 입력창-->
+<input type="file" id="fileinput" accept="imge/*"> <!--accept는 모든 이미지형식이 가능-->
+<a href="web_b1nd05.html" target="_blank">upload</a> <br>
+<a href="web_b1nd06.html" target="_blank">next p</a><p>다음 페이지에도 작성해보세요!</p>
+
+
+</body>
+</html>

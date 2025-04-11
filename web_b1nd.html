@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diary.com</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: rgb(250, 250, 254);
+            font-family: "Academy Engraved LET";
+            font-size: 60px;
+            transform: translateY(-50px); /* 시작 시점에서 위로 50px */
+            animation: slideIn 2s ease-out forwards; /* 올바르게 애니메이션 이름 지정 */
+            text-shadow: 2px 2px 5px rgb(182, 182, 213);
+        }
+        
+        h1:nth-of-type(2) {
+            animation-delay: 1s; /* 두 번째 텍스트는 1초 후에 애니메이션 시작 */
+        }
+        
+        /* 애니메이션 정의 */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px); /* 애니메이션 시작 시점 */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* 애니메이션 끝 원래 위치로 */
+            }
+        }
+        
+        body {
+            background-image:url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNTAxMTNfMjQ4%2FMDAxNzM2NzQxNTIyNTc5.tmuUdsCb2EbIRZJUMuLUUZkBpgZ7HMjybA0qmowk-Mkg.tIyQg5-cH4Wy35ITfCC-9miLTGy1a2cWmTJqdRHrs14g.PNG%2F%25C7%25D8%25BD%25C3%25C5%25C2%25B1%25D7.png&type=sc960_832
+            );
+            background-size: cover;
+        }
+        a:link, a:visited {
+            background-color: rgb(35, 118, 190);
+            color: aliceblue;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px; /*버튼 간격추가*/
+            border-radius: 25px;
+            font-family: "배달의민족 주아";
+        
+        }
+        a:hover {
+            background-color: blue;
+        }
+        /*로그인 버튼 추가*/
+        .login-btn {
+            background-color: rgb(35, 118, 190);
+            color: aliceblue;
+        
+        }
+        .center {
+            text-align: center;
+        }
+        h2 {
+            color: aliceblue;
+            font-family: "배달의민족 주아";
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>일상을 기록하다</h1>
+    <h1>Capturing Daily Life</h1>
+    <a href="web_b1nd02.html" target="_blank">회원가입</a>
+    <a href="web_b1nd03.html" target="_blank">로그인</a>
+    <div class="center">
+        <h2><strong>일상을 기록하고 공유하며 사람들과 소통해보세요!</strong></h2><br>
+    </div>
+</body>
+</html>
